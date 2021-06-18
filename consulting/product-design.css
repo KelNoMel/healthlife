@@ -1,0 +1,229 @@
+html, body {
+    font-family: 'Nunito';
+    background-color: #E9FFF9;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* ######### Style top header #########*/
+.header {
+    background: #1AA404;
+    width: 100%;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    height: 70px;
+}
+
+/* Healthline logo on header*/
+.header img {
+    float: left;
+    max-height: 70px;
+    width: auto;
+}
+
+/* Highlight hovers */
+.header a {
+    transition: background-color .2s;
+    
+}
+
+.header a:hover {
+    background: #45c032;
+    box-shadow: 2px 2px 6px #1d1f2187;
+}
+
+/* ######### Style dropdown within header #########*/
+.dropdown {
+    position: relative;
+    display: inline-block
+}
+
+/* Dropdown top button on header */
+.header .dropdown a {
+    color: #f1f1f1;
+    display: inline-block;
+    padding-top: 15px !important;
+    padding: 15px;
+    padding-bottom: 18px !important;
+    font-size: 1.7em;
+    text-decoration: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1AA404;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    font-size: 1.25em !important;
+    width: calc(100% - 30px);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* ######### Style content #########*/
+h1 {
+    background-image: url(hill.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: -4%;
+    margin-left: -4%;
+    padding-left: 7%;
+    padding-top: 12em;
+    height: 5em;
+    font-size: 1.25em;
+    font-style: italic;
+    top: 24em;
+    color: white;
+}
+
+h1 strong {
+    font-size: 3.5em;
+}
+
+.content {
+    padding: 16px;
+    margin: 10px;
+    display: flexbox;
+}
+
+.content p {
+    font-size: 1.25em;
+}
+
+.sub {
+    margin: auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+}
+
+.textimage .text {
+    float: left;
+    text-align: justify;
+}
+
+.textimage img {
+    max-height: 250px;
+    width: auto;
+    float: left;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 2.5%;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.grid img {
+    max-width: 400px;
+    height: auto;
+}
+
+.grid p {
+    text-align: center;
+}
+
+.timeline {
+    background: lightgrey;
+    font-size: 1.25em;
+    margin: auto;
+    margin-top: 40px;
+    padding: 2%;
+    max-width: 1000px;
+    clear: both;
+}
+
+.timeline h3 {
+    font-size: 2em;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 20px;
+}
+
+.contact {
+    right: 10px;
+    text-decoration: none;
+}
+
+/*########## Style Bottom Card ##########*/
+.bottomcard {
+    bottom: 0;
+    margin: 10px;
+    clear: left;
+}
+
+.bottomcard img {
+    padding-top: 20px;
+    max-height: 110px;
+    width: auto;
+}
+
+.bottomcard #disclaimer {
+    font-size: 5px;
+    text-align: center;
+}
+
+.bottomcard #media {
+    float: right;
+    margin-top: -40px;
+    font-size: 1.5em;
+}
+
+#media a {
+    color: #046404;
+    text-decoration: none;
+}
+
+.bottomcard nav {
+    padding-top: 20px;
+    padding-right: 15px;
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-height: 200px;
+    max-width: 400px;
+    float: right;
+}
+
+.bottomcard ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottomcard li {
+    text-decoration: underline;
+}
+
+.bottomcard ul a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+}
+
+.bottomcard ul a:hover {
+    text-shadow: 0 0 0.02px black;
+}
